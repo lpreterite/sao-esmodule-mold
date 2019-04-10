@@ -1,0 +1,36 @@
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import { terser } from 'rollup-plugin-terser'
+<% if(mode === 'vue-component'){ %>
+import vue from 'rollup-plugin-vue'
+import css from 'rollup-plugin-css-only'
+<% } %>
+
+import pkg from './package.json'
+
+const sourcemap = true
+
+const plugins = []
+if(process.env.BUILD === 'production'){
+	plugins.push(terser({ sourcemap }))
+}
+
+export default [
+	{
+		input: 'src/main.js',
+		output: [
+            { name: 'vpin', file: pkg.browser, format: 'umd', exports: 'named', sourcemap },
+			{ name: 'vpin', file: pkg.main, format: 'cjs', exports: 'named', sourcemap },
+			{ name: 'vpin', file: pkg.module, format: 'es', exports: 'named', sourcemap }
+		],
+        plugins: [
+			resolve(),
+			commonjs(),
+			<% if(mode === 'vue-component'){ %>
+			css(),
+			vue({ css: false }),
+			<% } %>
+			...plugins
+        ]
+	}
+]

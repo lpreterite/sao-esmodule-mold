@@ -1,0 +1,25 @@
+{
+  "name": "sao-esmodule-mold",
+  "version": "1.0.0",
+  "description": "es module SAO generator",
+  "repository": {
+    "url": "lpreterite/sao-esmodule-mold",
+    "type": "git"
+  },
+  "author": "pakcy <lpreterite@126.com> (github.com/lpreterite)",
+  "license": "MIT",
+  "files": [
+    "saofile.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "sao": "^1.0.0"
+  }
+}
