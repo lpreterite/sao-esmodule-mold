@@ -21,9 +21,9 @@ sao esmodule-mold my-project
 ### From git
 
 ```bash
-sao pakcy/sao-esmodule-mold my-project
+sao lpreterite/sao-esmodule-mold my-project
 ```
 
 ## License
 
-MIT &copy; [pakcy](github.com/pakcy)
+MIT &copy; [pakcy-tang](github.com/lpreterite)
