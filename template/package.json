@@ -13,6 +13,10 @@
     "test": "nyc mocha",
     "prepublish": "cross-env BUILD=production npm test"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/<%= username %>/<%= name %>.git"
