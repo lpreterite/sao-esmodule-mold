@@ -8,6 +8,7 @@ import css from 'rollup-plugin-css-only'
 
 import pkg from './package.json'
 
+const name = "<%= name %>"
 const sourcemap = true
 
 const plugins = []
@@ -19,9 +20,9 @@ export default [
 	{
 		input: 'src/main.js',
 		output: [
-            { name: 'vpin', file: pkg.browser, format: 'umd', exports: 'named', sourcemap },
-			{ name: 'vpin', file: pkg.main, format: 'cjs', exports: 'named', sourcemap },
-			{ name: 'vpin', file: pkg.module, format: 'es', exports: 'named', sourcemap }
+            { name, file: pkg.browser, format: 'umd', exports: 'named', sourcemap },
+			{ name, file: pkg.main, format: 'cjs', exports: 'named', sourcemap },
+			{ name, file: pkg.module, format: 'es', exports: 'named', sourcemap }
 		],
         plugins: [
 			resolve(),
