@@ -1,4 +1,6 @@
 # sao-esmodule-mold
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flpreterite%2Fsao-esmodule-mold.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flpreterite%2Fsao-esmodule-mold?ref=badge_shield)
+
 
 使用`rollup`构建的项目模板，主要用于开发组件的项目。在工作中遇到的问题将会持续在这个仓库提交更新，如果你一样遇到此类问题希望能在issues见到你的反馈，PR更是欢迎👏
 
@@ -66,3 +68,7 @@ npm run test
 - `nyc`：生成测试代码的覆盖报告工具，一般和测试工具一并使用。
 - `reify`：能让你放心使用ES2015的库，在执行前引入就可以了，这个仓mocha测试运行时会预先加载所以测试代码也能安心使用ES2015代码。
 - `jsdom`：模拟浏览器环境的工具，在测试vue组件时会用到。
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flpreterite%2Fsao-esmodule-mold.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flpreterite%2Fsao-esmodule-mold?ref=badge_large)
