@@ -1,6 +1,6 @@
 {
   "name": "sao-esmodule-mold",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "es module SAO generator",
   "repository": {
     "url": "lpreterite/sao-esmodule-mold",
