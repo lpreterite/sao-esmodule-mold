@@ -1,0 +1,28 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "modules": false,
+                "targets": "> 5%"
+            }
+        ]
+    ],
+    "env": {
+        "test": {
+            "retainLines": true,
+            "sourceMaps": "inline",
+            "presets": [
+                [
+                    "@babel/env",
+                    {
+                        "targets": {
+                            "node": "current"
+                        }
+                    }
+                ]
+            ],
+            "plugins": ["istanbul"]
+        }
+    }
+}

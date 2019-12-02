@@ -60,7 +60,8 @@ module.exports = {
         gitignore: '.gitignore',
         gitattributes: '.gitattributes',
         nycrc: '.nycrc',
-        gitignore: '.gitignore'
+        gitignore: '.gitignore',
+        babelrc: '.babelrc'
       }
     },
     {

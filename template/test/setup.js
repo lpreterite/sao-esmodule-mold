@@ -1,8 +1,9 @@
-import { expect } from "chai"
+const { expect, assert } = require("chai")
 
 <% if(mode === 'vue-component'){ %>
-import jsdom from 'jsdom-global'
+const jsdom = require('jsdom-global')
 jsdom()
 <% } %>
 
 global.expect = expect
+global.assert = assert
